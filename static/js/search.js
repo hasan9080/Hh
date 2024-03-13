@@ -13,6 +13,7 @@
     });
 
     window.renderGoogleSearchResults = () => {
+        $('#bing-note').css('display', 'none');
         var cx = '013288817511911618469:elfqqbqldzg';
         var gcse = document.createElement('script');
         gcse.type = 'text/javascript';
@@ -45,6 +46,7 @@
     }
 
     window.renderBingSearchResults = () => {
+      $('#bing-note').addClass('alert alert-info note callout').css('display', 'block');
       let urlParams = new URLSearchParams(window.location.search);
       let searchTerm = urlParams.get("q") || "";
       let page = urlParams.get("page") || 1;
