@@ -21,11 +21,11 @@ _크론잡은_ 반복 일정에 따라 {{< glossary_tooltip term_id="job" text="
 크론잡은 한계와 특징이 있다.
 예를 들어, 특정 상황에서는 하나의 크론잡이 동시에 여러 개의 잡을 생성할 수 있다. 하단의 [한계](#크론잡의-한계-cron-job-limitations)를 보자.
 
-컨트롤 플레인이 크론잡을 위해 새로운 잡과 (간접적으로) 파드를 생성할 때, 크론잡의 `.metadata.name`이 파드의 이름을 결정짓는 근간이 된다.
+컨트롤 플레인이 크론잡을 위해 새로운 잡과 (간접적으로) 파드를 생성할 때, 크론잡의 `.metadata.name`이 파드의 이름을 결정짓는 기초가 된다.
 크론잡의 이름은 유효한 [DNS 서브도메인 이름](/ko/docs/concepts/overview/working-with-objects/names/#dns-서브도메인-이름) 값이어야 하나, 의도하지 않은 파드 호스트명을 유발할 수 있다.
-최대의 호환성을 위해서는 이름이 [DNS 레이블](/ko/docs/concepts/overview/working-with-objects/names#dns-label-names)의 더욱 제한적인 규칙들을 따라야 한다.
+최고의 호환성을 위해서는 [DNS 레이블](/ko/docs/concepts/overview/working-with-objects/names#dns-label-names)의 더욱 엄격한 규칙을 따라야 한다.
 이름이 DNS 서브도메인이더라도, 이름은 52자 이하여야 한다. 이는 크론잡 컨트롤러는 제공된 잡 이름에
-11자를 자동으로 추가하고, 작업 이름의 최대 길이는 63자라는 제약 조건이 있기 때문이다.
+11자를 자동으로 추가하고, 잡 이름의 최대 길이는 63자라는 제약 조건이 있기 때문이다.
 
 <!-- body -->
 ## 예시
