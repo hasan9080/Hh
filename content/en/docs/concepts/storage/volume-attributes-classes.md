@@ -8,7 +8,7 @@ weight: 40
 ---
 <!-- overview -->
 
-{{< feature-state for_k8s_version="v1.29" state="alpha" >}}
+{{< feature-state for_k8s_version="v1.31" state="beta" >}}
 
 This page assumes that you are familiar with [StorageClasses](/docs/concepts/storage/storage-classes/),
 [volumes](/docs/concepts/storage/volumes/) and [PersistentVolumes](/docs/concepts/storage/persistent-volumes/)
