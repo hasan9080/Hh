@@ -21,6 +21,8 @@ and resource allocation without having to communicate with the driver.
 Different kinds of resources support arbitrary parameters for defining requirements and
 initialization.
 
+TODO
+
 ## {{% heading "prerequisites" %}}
 
 Kubernetes v{{< skew currentVersion >}} includes cluster-level API support for
