@@ -1,0 +1,9 @@
+---
+layout: blog
+title: "Kubernetes 1.31: Customizable Pod failure handling for Jobs"
+date: 2024-06-20
+slug: kubernetes-1-31-pod-failure-policy-stable
+author: >
+  Michał Woźniak (Google)
+---
+WIP
