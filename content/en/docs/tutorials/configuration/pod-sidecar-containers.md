@@ -128,8 +128,8 @@ As an example, you can follow this conversation: https://github.com/istio/istio/
 2. Check Nodes compatibility on injection. During sidecar injection you may use the following strategies to check node compatibility:
    - query node version and assume the feature gate is enabled on the version 1.29+
    - query node prometheus metrics and check feature enablement status
-   - assume the nodes are running in a [supported version skew](https://kubernetes.io/releases/version-skew-policy/#supported-version-skew).
-     If API version is 1.32+, assume all the nodes support the feature.
+   - assume the nodes are running with a [supported version skew](/releases/version-skew-policy/#supported-version-skew)
+     from the API server
    - there may be other custom ways to detect nodes compatibility.
 3. Develop a universal sidecar injector. The idea of a universal sidecar container is to inject a sidecar container
    as a regular container as well as a native sidecar container. And have a runtime logic to decide which one will work.
