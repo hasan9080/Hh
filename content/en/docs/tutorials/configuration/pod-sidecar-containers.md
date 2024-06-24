@@ -79,7 +79,8 @@ Here are the considerations and troubleshooting steps that one can take while ad
 As a very first step, make sure that both - API server and Nodes were upgraded to the version `1.29+`.
 The feature will break on clusters where Nodes are running earlier versions where it is not enabled.
 
-The feature gate enablement should also be validated for both - API server AND Nodes.
+You should ensure that the feature gate is enabled for the API server(s) within the control plane
+**and** for all nodes.
 
 One of the ways to check the feature gate enablement is running a command like this:
 
