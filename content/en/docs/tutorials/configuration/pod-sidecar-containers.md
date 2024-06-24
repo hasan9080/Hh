@@ -37,8 +37,13 @@ You can read more in the [Sidecar containers](/docs/concepts/workloads/pods/side
 concept page.
 
 The concept of sidecar containers is not new and there are multiple implementation of this concept.
-The feature is being used by end users as well as by the sidecar authors who provide ways to "inject"
-sidecar containers to any Pod. Those "injectors" are typically implemented as [mutating webhook](/docs/reference/access-authn-authz/admission-controllers/#mutatingadmissionwebhook).
+As well as sidecar containers that you, the person defining the Pod, want to run, you can also find
+that some {{< glossary_tooltip text="addons" term_id="addons" >}} modify Pods -  before the Pods
+start running - so that there are extra sidecar containers. The mechanisms to _inject_ those extra
+sidecars are often [mutating webhooks](/docs/reference/access-authn-authz/admission-controllers/
+#mutatingadmissionwebhook).
+For example, a service mesh addon might inject a sidecar that configures mutual TLS and encryption
+in transit between different Pods.
 
 While the concept of sidecar containers is not new,
 the native implementation of this feature in Kubernetes, however, is new. And as with every new feature,
