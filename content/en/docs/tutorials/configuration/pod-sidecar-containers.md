@@ -58,9 +58,9 @@ There are many benefits for the built-in sidecar containers.
 
 1. Built-in sidecar containers can run before Init containers.
 2. It is guaranteed that built-in sidecar containers finish AFTER all the regular containers completion.
-3. With Jobs, when Pod's `restartPolicy=OnFailure` or `restartPolicy=Never`,
+3. With Jobs, when Pod's `restartPolicy: OnFailure` or `restartPolicy: Never`,
    built-in sidecar containers will not block Pod completion.
-4. Also, with Jobs, build-in sidecar containers will keep being restarted, even if regular containers would not with Pod's `restartPolicy=Never`.
+4. Also, with Jobs, built-in sidecar containers would keep being restarted once they are done, even if regular containers would not with Pod's `restartPolicy: Never`.
 
 These benefits are drastic, and lead to faster adoption that we see with other Kubernetes features.
 
