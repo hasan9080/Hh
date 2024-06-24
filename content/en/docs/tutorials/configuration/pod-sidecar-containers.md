@@ -22,7 +22,6 @@ This section is relevant for people adopting [sidecar containers](/docs/concepts
 
 {{< include "task-tutorial-prereqs.md" >}} {{< version-check >}}
 
-* This tutorial is relevant for clusters version 1.29+
 
 
 <!-- lessoncontent -->
