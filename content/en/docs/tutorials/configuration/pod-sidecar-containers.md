@@ -66,7 +66,7 @@ These benefits are drastic, and lead to faster adoption that we see with other K
 
 ## Adopting sidecar containers
 
-The `SidecarContainers` feature is in beta state starting Kubernetes version `1.29` and is enabled by default.
+The `SidecarContainers` [feature gate](/docs/reference/command-line-tools-reference/feature-gates/) is in beta state starting from Kubernetes version 1.29 and is enabled by default.
 Some clusters may have this feature disabled or have software installed that is incompatible with the feature.
 
 When this happens, the Pod may be rejected or the sidecar containers may block Pod startup, rendering the Pod useless.
