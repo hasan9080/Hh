@@ -9,7 +9,7 @@ min-kubernetes-server-version: 1.29
 
 This section is relevant for people adopting [sidecar containers](/docs/concepts/workloads/pods/sidecar-containers/) for their workloads.
 
-{{< feature-state feature_gate_name=`SidecarContainers >}}
+{{< feature-state feature_gate_name="SidecarContainers" >}}
 
 ## {{% heading "objectives" %}}
 
