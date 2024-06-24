@@ -150,4 +150,4 @@ As an example, you can follow this conversation: https://github.com/istio/istio/
 ## {{% heading "whatsnext" %}}
 
 
-* Learn more about [SidecarContainers](/docs/concepts/workloads/pods/sidecar-containers/).
+* Learn more about [sidecar containers](/docs/concepts/workloads/pods/sidecar-containers/).
