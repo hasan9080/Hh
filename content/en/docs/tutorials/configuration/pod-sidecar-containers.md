@@ -102,7 +102,7 @@ When the `SidecarContainers` feature gate is enabled, Pods gain a new field in t
 Some tools or mutating webhooks might have been built with an earlier version of Kubernetes API.
 If tools pass the unknown fields as-is or mutating webhooks are using the recommended `Patch` method to mutate Pods, it will not be a problem.
 
-However there are tools that will strip out unknown fields and must be recompiled with the v1.28+ version of Kubernetes API.
+However there are tools that will strip out unknown fields; if you have those, they must be recompiled with the v1.28+ version of Kubernetes API client code.
 
 The way to check this is to use the `kubectl describe pod` command with your Pod.
 If any tools stripped out the new field (`restartPolicy:Always`), you will not find see it in the command output.
