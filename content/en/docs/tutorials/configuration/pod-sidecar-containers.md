@@ -98,7 +98,7 @@ it means that the feature is enabled.
 If you experience issues when validating the feature, it may be an indication that one of the
 3rd party tools or mutating webhooks are broken.
 
-The `SidecarContainers` feature adds a new field that is define in Kubernetes `1.28` API.
+When the `SidecarContainers` feature gate is enabled, Pods gain a new field in their API.
 Some tools or mutating webhooks might have been built with an earlier version of Kubernetes API.
 If tools pass the unknown fields as-is or mutating webhooks are using the recommended `Patch` method to mutate Pods, it will not be a problem.
 
