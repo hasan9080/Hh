@@ -76,7 +76,8 @@ Here are the considerations and troubleshooting steps that one can take while ad
 
 **Ensure the feature gate is enabled.**
 
-As a very first step, make sure that both - API server and Nodes were upgraded to the version `1.29+`.
+As a very first step, make sure that both - API server and Nodes are at Kubernetes version v1.29 or
+later.
 The feature will break on clusters where Nodes are running earlier versions where it is not enabled.
 
 You should ensure that the feature gate is enabled for the API server(s) within the control plane
