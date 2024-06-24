@@ -496,6 +496,10 @@ you would need to either:
 - configure a kubelet image credential provider on each node
 - specify image pull credentials using `imagePullSecrets` and at least one Secret
 
+## Separate the writeable and read-only layers
+
+TBD
+
 ## {{% heading "whatsnext" %}}
 
 * Read the [OCI Image Manifest Specification](https://github.com/opencontainers/image-spec/blob/master/manifest.md).
