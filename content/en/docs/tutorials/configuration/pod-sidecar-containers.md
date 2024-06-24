@@ -33,7 +33,8 @@ application container within the same {{< glossary_tooltip text="Pod" term_id="p
 These containers are used to enhance or to extend the functionality of the primary _app
 container_ by providing additional services, or functionality such as logging, monitoring,
 security, or data synchronization, without directly altering the primary application code.
-You can read more at [Sidecar containers concept page](/docs/concepts/workloads/pods/sidecar-containers/).
+You can read more in the [Sidecar containers](/docs/concepts/workloads/pods/sidecar-containers/)
+concept page.
 
 The concept of sidecar containers is not new and there are multiple implementation of this concept.
 The feature is being used by end users as well as by the sidecar authors who provide ways to "inject"
