@@ -49,7 +49,7 @@ While the concept of sidecar containers is not new,
 the native implementation of this feature in Kubernetes, however, is new. And as with every new feature,
 adopting this feature may present certain challenges.
 
-This article explore challenges and solution can be experienced by end users as well as
+This tutorial explore challenges and solution can be experienced by end users as well as
 by authors of sidecar containers.
 
 ## Benefits of a built-in sidecar containers
