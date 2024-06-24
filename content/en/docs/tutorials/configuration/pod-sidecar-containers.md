@@ -104,7 +104,8 @@ If tools pass the unknown fields as-is or mutating webhooks are using the recomm
 
 However there are tools that will strip out unknown fields; if you have those, they must be recompiled with the v1.28+ version of Kubernetes API client code.
 
-The way to check this is to use the `kubectl describe pod` command with your Pod.
+The way to check this is to use the `kubectl describe pod` command with your Pod that has passed through
+mutating admission.
 If any tools stripped out the new field (`restartPolicy:Always`), you will not find see it in the command output.
 
 If you hit an issue like this, please advise the author of the tools or the webhooks to switch to `Patch` method of modifying objects.
