@@ -164,6 +164,11 @@ If you would like to always force a pull, you can do one of the following:
 - Enable the [AlwaysPullImages](/docs/reference/access-authn-authz/admission-controllers/#alwayspullimages)
   admission controller.
 
+#### Place holder for secure image pull feature updates
+
+This is a placeholder for the doc updates regarding the latest image pull updates according to this [enhancement](https://github.com/kubernetes/enhancements/issues/2535)
+
+
 ### ImagePullBackOff
 
 When a kubelet starts creating containers for a Pod using a container runtime,
