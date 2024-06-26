@@ -1065,6 +1065,11 @@ status:
   terminating: 3 # three Pods are terminating and have not yet reached the Failed phase
 ```
 
+{{< note >}}
+Since v1.31 the `JobPodReplacementPolicy` feature gate guards the fix for the issue:
+[A Job might finish with ready!=0, terminating!=0](https://github.com/kubernetes/kubernetes/issues/123775).
+{{< /note >}}
+
 ### Delegation of managing a Job object to external controller
 
 {{< feature-state feature_gate_name="JobManagedBy" >}}
@@ -1108,6 +1113,11 @@ are such jobs, there is a risk that they might be reconciled by two controllers
 after the operation: the built-in Job controller and the external controller
 indicated by the field value.
 {{< /warning >}}
+
+{{< note >}}
+Since v1.31 the `JobManagedBy` feature gate guards the fix for the issue:
+[A Job might finish with ready!=0, terminating!=0](https://github.com/kubernetes/kubernetes/issues/123775).
+{{< /note >}}
 
 ## Alternatives
 
