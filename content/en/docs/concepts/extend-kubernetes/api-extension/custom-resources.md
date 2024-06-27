@@ -161,7 +161,7 @@ The [CustomResourceDefinition](/docs/tasks/extend-kubernetes/custom-resources/cu
 API resource allows you to define custom resources.
 Defining a CRD object creates a new custom resource with a name and schema that you specify.
 The Kubernetes API serves and handles the storage of your custom resource.
-The name of a CRD object must be a valid
+The name of an object whose kind/resource is defined by a CRD must be a valid
 [DNS subdomain name](/docs/concepts/overview/working-with-objects/names#dns-subdomain-names).
 
 This frees you from writing your own API server to handle the custom resource,
