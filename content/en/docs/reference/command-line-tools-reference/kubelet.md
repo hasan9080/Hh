@@ -465,7 +465,6 @@ ServiceTrafficDistribution=true|false (ALPHA - default=false)<br/>
 SidecarContainers=true|false (BETA - default=true)<br/>
 SizeMemoryBackedVolumes=true|false (BETA - default=true)<br/>
 StatefulSetAutoDeletePVC=true|false (BETA - default=true)<br/>
-StatefulSetStartOrdinal=true|false (BETA - default=true)<br/>
 StorageNamespaceIndex=true|false (BETA - default=true)<br/>
 StorageVersionAPI=true|false (ALPHA - default=false)<br/>
 StorageVersionHash=true|false (BETA - default=true)<br/>
